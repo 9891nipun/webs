@@ -1,0 +1,23 @@
+{% extends 'movie2/header.html'  %}
+
+<body bgcolor="#ff7f50">
+{% block a %}
+<h1> {{ movie.actor }} </h1>
+<h2> {{ movie.actor_movie }} </h2>
+
+
+
+    {% for song in movie.song_set.all %}
+
+            {{ song.song_name}}
+            {% if song.is_favourite %}
+               <img src="D:\moto photos/papa.jpg"/>
+            {% endif %}
+
+        <br>
+    {% endfor %}
+
+
+{% endblock %}
+
+

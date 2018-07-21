@@ -1,0 +1,17 @@
+{% extends 'movie2/header.html'  %}
+
+{% block a %}
+<h1> WELCOME BACK!! </h1>
+  <ul>
+    {% for a in object_list %}
+    <li>
+
+        <a href="{% url 'movie1:detail' a.id %}"> {{ a.actor }}
+
+
+        </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

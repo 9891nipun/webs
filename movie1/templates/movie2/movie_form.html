@@ -1,0 +1,21 @@
+{% extends 'movie2/header.html'  %}
+
+{% block a %}
+<form class="from-horizontal" action="" method="post">
+
+    {% csrf_token %}
+    {% include 'movie2/form_tem.html' %}
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success>click me>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+{% endblock %}
